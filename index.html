@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="todo-container" aria-labelledby="todo-heading">
+        <h1 id="todo-heading">To-Do List</h1>
+        
+        <!-- Input group for task input and buttons -->
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="Add a new task..." aria-label="Task input">
+            <button id="add-task-btn" aria-label="Add new task">Add Task</button>
+            <button id="voice-command-btn" aria-label="Start voice command">Start Voice Command</button>
+        </div>
+
+        <!-- Task list to display tasks -->
+        <ul id="task-list" aria-live="polite" aria-label="Task list"></ul>
+    </main>
+
+    <!-- Listening popup to notify users -->
+    <div id="listening-popup" class="listening-popup" role="alert">Listening...</div>
+
+    <!-- JavaScript for functionality -->
+    <script src="./jquery.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
